@@ -1,0 +1,113 @@
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+body,
+p,
+h1,
+figure,
+section {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--Yellow);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  justify-content: center;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--White);
+  color:var(--Black);
+  width: 25%;
+  min-width: 24rem;
+  border-radius: 1rem;
+  padding: 1.5rem 0;
+  /* height: 28rem; */
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 70%;
+    min-width: initial;
+    margin: 0 1rem;
+  }
+
+  .figure-illustrator-container {
+    text-align: center;
+  }
+
+  .figure-illustrator {
+    width:  90%;
+  }
+}
+
+.figure-illustrator {
+    border-radius: 0.5rem;
+}
+
+.main-content {
+    margin: 1.5rem 0;
+    padding: 0 1.5rem;
+}
+
+.chip {
+    padding: 0.25rem;
+    background-color: var(--Yellow);
+    display: inline-block;
+}
+
+.note-text {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.text {
+    font-size: .75rem;
+    font-weight: normal;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.heading-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.default-text {
+    color: var(--Grey);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    margin-top: 1.5rem;
+}
+
+.avatar-img {
+    margin-inline-end: .5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.avatar-name {
+    font-weight: bold;
+}
